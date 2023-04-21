@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: aliceblue;
+            text-align:center;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+        <form action="{{url_for('list')}}" method = "POST">
+            <h1>Book a Room</h1>
+            Name<br>
+            <input type="text" name="nm"/><br>
+            Check-in-date<br>
+            <input type="text" name="cid"/><br>
+            Check-out-date<br>
+            <input type="text" name="cod"/><br>
+            Room Type<br>
+            <input type="text" name="rt"/><br>
+    
+            <input type="submit" value="Submit"/>
+        </form>
+</body>
+</html>
